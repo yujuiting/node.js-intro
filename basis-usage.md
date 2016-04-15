@@ -48,7 +48,9 @@ $ npm i <package_name or url or git>
 $ npm install <package_name or url or git>
 ```
 `--save` or `-S`:  Register in `package.json` dependencies.
+
 `--save-dev` or `-D`:  Register in `package.json` devDependencies.
+
 `--global` or `-g`: Install global.
 
 ### Install all dependencies
@@ -85,7 +87,9 @@ $ npm run my-script
 ```
 
 Run before and after.
+
 `pre<script_name>`:  Run before `<script_name>`.
+
 `post<script_name>`:  Run after `<script_name>`.
 
 
@@ -123,4 +127,5 @@ console.log(MyMath.sub(1, 2)); // -> -1
 `exports` is an alternative for module.exports.
 
 If `module.exports` is empty, node will assign all members in `exports` to `module.exports`.
+
 If `module.exports` is *not* empty, node will *ignore* `exports`.
